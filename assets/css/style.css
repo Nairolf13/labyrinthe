@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 80px;
+}
+
+#message{
+    display: flex;
+    position:absolute;
+    top: 5%;
+    right: 20%;
+    height: 50px;
+    width: 200px;
+}
+
+#move-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    gap: 20px;
+    transform: translateY(-50%);
+}
+
+.middle-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    background-color: #868b86; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #2d3749; 
+}
+
+button[value="up"] {
+    clip-path: polygon(50% 10%, 0% 100%, 100% 100%);    
+}
+
+button[value="down"] {
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+button[value="left"] {
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+
+button[value="right"] {
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+button[value="reset"] {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.mur {
+    background-image: url(../imgs/mur.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chemin {
+    background-color: white;
+}
+
+.joueur {
+    background-image: url(../imgs/cat.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.souris {
+    background-image: url(../imgs/souris.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fog {
+    background-image: url(../imgs/nuage.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
